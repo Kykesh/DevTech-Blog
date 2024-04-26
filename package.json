@@ -1,0 +1,23 @@
+{
+  "name": "devtech-blog",
+  "version": "1.0.0",
+  "description": "A CMS-style blog platform built from scratch for developers to publish and discuss tech-related content. This application follows the MVC architectural pattern and is built using Node.js, Express, Sequelize, Handlebars, and MySQL. Deployed on Heroku, it features user authentication, session management, and full CRUD functionalities for blog posts and comments.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-session-sequelize": "^7.1.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.9.7",
+    "sequelize": "^6.37.3"
+  }
+}
