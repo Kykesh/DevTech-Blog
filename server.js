@@ -3,7 +3,7 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-const sequelize = require('./config/config'); // Import Sequelize configuration
+const sequelize = require('./config/config.json'); // Import Sequelize configuration
 const helpers = require('./utils/helpers'); // Optional: custom helpers for Handlebars
 
 const app = express();
