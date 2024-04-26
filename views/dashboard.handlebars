@@ -1,0 +1,14 @@
+<section>
+    <h1>Dashboard</h1>
+    {{#each posts as |post|}}
+        <div>
+            <h3>{{post.title}}</h3>
+            <p>{{post.content}}</p>
+            <a href="/dashboard/edit/{{post.id}}">Edit</a>
+            <button onclick="deletePost({{post.id}})">Delete</button>
+        </div>
+    {{else}}
+        <p>You have not created any posts yet.</p>
+    {{/each}}
+    <a href="/dashboard/new">Create New Post</a>
+</section>
